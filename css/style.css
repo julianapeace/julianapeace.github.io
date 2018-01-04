@@ -88,9 +88,13 @@ HOME
   height: 100vh;
   min-height: 100%;
 }
-#home .resume{
+/* #home a{
   color: #043f6e;
 }
+#home a:hover{
+  color: #BBDEFB;
+  text-decoration: none;
+} */
 
 .start{
   width: 100vw;
@@ -275,4 +279,78 @@ color: rgba(0,0,0,0.67);
 #footer a:hover{
   color: #212121;
   text-decoration:none;
+}
+/******************************************************
+BUTTONS
+******************************************************/
+.myButton {
+  background-color:#1976D2;
+  display:inline-block;
+  cursor:pointer;
+  color: #BBDEFB;
+  font-family:Arial;
+  font-size:15px;
+  padding:9px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 1px #4d4242;
+  box-shadow:0px 2px 4px rgba(0,0,0,0.38);
+}
+.myButton:hover {
+  position:relative;
+  background-color:#2196F3;
+  color:#BBDEFB;
+  text-decoration:none;
+  text-shadow:0px 1px 2px #4d4242;
+  box-shadow:0px 4px 6px rgba(0,0,0,0.55);
+  bottom: 1px;
+}
+.myButton:active {
+  position:relative;
+  text-decoration:none;
+  top:1px;
+}
+.myButton:visited{
+  color: #BBDEFB;
+}
+
+.button{
+  text-transform: uppercase;
+  display:inline-block;
+  cursor:pointer;
+  color: #FFF;
+  font-family:Arial;
+  font-size:15px;
+  padding:9px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 1px #4d4242;
+  box-shadow:0px 2px 4px rgba(0,0,0,0.18);
+}
+.button:hover{
+  position:relative;
+  color:#FFF;
+  text-decoration:none;
+  text-shadow:0px 1px 2px #4d4242;
+  box-shadow:0px 4px 6px rgba(0,0,0,0.28);
+  bottom: 1px;
+}
+.button:active{
+  position:relative;
+  text-decoration:none;
+  top:1px;
+}
+.button:visited{
+  color: #FFF;
+}
+
+.githubButton {
+  background-color:#1976D2;
+}
+.githubButton:hover {
+  background-color:#2196F3;
+}
+.liveButton {
+  background-color:#c51162;
+}
+.liveButton:hover {
+  background-color:#ff4081;
 }
