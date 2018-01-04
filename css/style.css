@@ -88,10 +88,13 @@ HOME
   height: 100vh;
   min-height: 100%;
 }
+#home .resume{
+  color: #043f6e;
+}
+
 .start{
   width: 100vw;
   height: 100vh;
-  /* border: 2px solid red; */
   display:flex;
   align-items: center;
   justify-content: center;
@@ -106,11 +109,8 @@ HOME
   font-weight: 700;
   line-height: 0.2em;
   text-shadow: 0px 2px 2px rgba(0,0,0,0.87);
-  /* border: 2px solid blue; */
 }
 .typeit{
-  /* border: 2px solid blue; */
-  /* color: white; */
   height: 1.75em;
   color: #BBDEFB;
   margin-bottom: 15px;
@@ -152,7 +152,6 @@ LOADER
 About
 ******************************************************/
 #about{
-  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -163,7 +162,6 @@ About
 }
 .about-container{
   width: 90%;
-  /* border:1px solid blue; */
   padding: 6em;
 }
 .about-text{
