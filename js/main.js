@@ -6,6 +6,6 @@ new TypeIt('#typeit', {
    strings: ["Software Engineer", "Full Stack Developer", "Ukulele Player"],
    speed: 100,
    breakLines: false,
-   autoStart: false,
+   autoStart: true,
    loop: true
 });
