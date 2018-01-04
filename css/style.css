@@ -1,0 +1,280 @@
+body{
+  font-family: 'Arvo','Roboto Slab', serif;
+}
+.title{
+  font-family:'Roboto Slab', serif;
+  color: #212121;
+  text-align: center;
+}
+/******************************************************
+NAVBAR
+******************************************************/
+.navigation {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+
+.nav-name{
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    background-color: #292929;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.name {
+    font-family: 'Arvo', sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.nav-social{
+    display: flex;
+    display: -webkit-flex;
+}
+
+.nav-social a{
+    flex-grow: 1;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    padding: 5px 0 5px 0;
+    font-size: 2em;
+    color: white;
+    transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+}
+
+.nav-social a:hover{
+    background-color: white;
+    text-decoration:none;
+}
+
+.email {background-color: #4fc3f7;}
+.email:hover {color: #4fc3f7;}
+
+.github {background-color: #03a9f4;}
+.github:hover {color: #03a9f4;}
+
+.linkedin {background-color: #0288d1;}
+.linkedin:hover {color: #0288d1;}
+
+.twitter{background-color: #01579B;}
+.twitter:hover{color: #01579B;}
+a:visited{color: #292929;}
+
+.medium{background-color: #043f6e;}
+.medium:hover {color: #043f6e;}
+
+/******************************************************
+HOME
+******************************************************/
+#home {
+  /* background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/953/mision.jpg) no-repeat top center; */
+  background-color: #043f6e;
+  background: linear-gradient(0deg,rgba(2,34,59,0.87),rgba(2,34,59,0.87)), url('/img/code-bg2.jpg') no-repeat top center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 100%;
+}
+.start{
+  width: 100vw;
+  height: 100vh;
+  /* border: 2px solid red; */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  flex-wrap:wrap;
+  color: white;
+}
+.start h1{
+  font-family: 'Roboto Slab';
+  font-size: 5em;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  line-height: 0.2em;
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.87);
+  /* border: 2px solid blue; */
+}
+.typeit{
+  /* border: 2px solid blue; */
+  /* color: white; */
+  height: 1.75em;
+  color: #BBDEFB;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align:center;
+  font-weight: 500;
+  font-size: 2em;
+  font-family: 'Roboto Slab';
+  line-height: 0.2em;
+}
+/******************************************************
+LOADER
+******************************************************/
+.loader {
+    border: 7px solid #f3f3f3; /* Light grey */
+    border-top: 7px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.loader-container{
+  width:100%;
+  height:100vh;
+  position: fixed;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+
+}
+/******************************************************
+About
+******************************************************/
+#about{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EEE;
+  border-bottom: 1px solid #BDBDBD;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
+
+}
+.about-container{
+  width: 90%;
+  /* border:1px solid blue; */
+  padding: 6em;
+}
+.about-text{
+  padding-top:3em;
+}
+.about-text>p{
+  color:#212121;
+  font-family: 'Raleway';
+}
+.about-img{
+  border-radius: 50%;
+}
+/******************************************************
+SKILLS
+******************************************************/
+#skills{
+  padding: 3em 5em 5em 5em;
+  border-bottom: 1px solid #BDBDBD;
+}
+.skill-skill{
+  font-size: 5em;
+}
+.skill{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h2:after {
+    background: none repeat scroll 0 0 #FF4081;
+    bottom: -5px;
+    content: "";
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    height: 3px;
+    position: relative;
+    width: 100px;
+}
+
+.mdl-tooltip{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/******************************************************
+Projects
+******************************************************/
+#projects{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  flex-wrap:wrap;
+  padding: 2em 0 0 0;
+  background-color: #EEE;
+  border-bottom: 1px solid #BDBDBD;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
+}
+.project-item{
+  padding: 1em 5em 5em 5em;
+  width: 92%;
+}
+.code , .project{
+  margin: 0;
+  padding: 0;
+  height: 400px;
+  overflow:scroll;
+}
+pre.prettyprint{
+  width: 100% !important;
+  margin: 0 !important;
+  border-radius:0 !important;
+}
+
+#github-img{
+  text-align:center;
+  padding: 4em 2em 4em 4em;
+  border-bottom: 1px solid #BDBDBD;
+}
+/******************************************************
+Footer
+******************************************************/
+#footer{
+background-color: #eee;
+padding: 2em 9em 4em 9em;
+color: rgba(0,0,0,0.67);
+}
+.footer-copyright{
+  font-size: 2em;
+}
+.footer-icons{
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+#footer a{
+    flex-grow: 1;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    padding: 5px 0 5px 0;
+    font-size: 1em;
+    color: #BDBDBD;
+    transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+}
+#footer a:hover{
+  color: #212121;
+  text-decoration:none;
+}
