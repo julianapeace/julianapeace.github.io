@@ -158,6 +158,49 @@
 
         <div class="project-description" style="font-family: 'Roboto Slab';">
           <div class="col-md-8 col-sm-12">
+            <div class="mdl-typography--headline" style="font-family: 'Roboto Slab';"><strong>4C</strong> | Predictive Analytics for Overbooking Optimization</div>
+            <p>4C is a cloud-based application that leverages predictive analytics to get actionable insights for optimizing overbookings by hotel sales managers. It relies on historical occupancy data, current & future reservations, variable room costs and walk costs to forecast the optimal rate of overbooking.</p>
+            <p>Built with Django, Splunk, HTML/CSS, and Ajax</p>
+          </div>
+          <div class="col-md-4 col-sm-12">
+              <a class="liveButton button" target="_blank" href="http://4c.julianamei.com">Live Website <i class="fa fa-heart-o" aria-hidden="true"></i></a>
+              <a class="githubButton button" target="_blank" href="https://github.com/julianapeace/homeaway">Github <i class="fa fa-code" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-8 col-sm-12 project">
+          <iframe width="560" height="400" src="https://www.youtube.com/embed/XAs1HuBv4y4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="code col-md-4 col-sm-12">
+          <pre class="prettyprint">
+                <code class="language-javascript">
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+function httpGet(theUrl) {
+  var xmlHttp = new XMLHttpRequest();
+  xmlHttp.open("GET", theUrl, false); // false for synchronous request
+  xmlHttp.send(null);
+  return xmlHttp.responseText;
+}
+                </code>
+              </pre>
+        </div>
+
+      </div>
+
+
+      <div class="row project-item">
+
+        <div class="project-description" style="font-family: 'Roboto Slab';">
+          <div class="col-md-8 col-sm-12">
             <div class="mdl-typography--headline" style="font-family: 'Roboto Slab';"><strong>Treffen</strong> | The Most Socialist Meet-Up App</div>
             <p>A meet-up app that triangulates multiple zip codes to return several local businesses that are closest to the centerpoint.</p>
             <p>Built with NodeJS, Express, and Yelp</p>
@@ -169,7 +212,8 @@
         </div>
 
         <div class="col-md-8 col-sm-12 project">
-          <img src="/img/treffen.png" alt="Juliana Mei Treffen Project">
+          <iframe width="560" height="400" src="https://www.youtube.com/embed/gWQxoEbm530" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <!-- <img src="/img/treffen.png" alt="Juliana Mei Treffen Project"> -->
         </div>
         <div class="code col-md-4 col-sm-12">
           <pre class="prettyprint">
@@ -224,7 +268,8 @@
           </div>
         </div>
         <div class="col-md-8 col-sm-12 project">
-          <img src="/img/getmypup.png" alt="Juliana Mei Get My Pup App Project" style="width: 100%;">
+          <iframe width="560" height="400" src="https://www.youtube.com/embed/AU1xUwq8Ru8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <!-- <img src="/img/getmypup.png" alt="Juliana Mei Get My Pup App Project" style="width: 100%;"> -->
         </div>
         <div class="code col-md-4 col-sm-12">
           <pre class="prettyprint">
@@ -307,7 +352,8 @@
         </div>
 
         <div class="col-md-8 col-sm-12 project">
-          <img src="/img/ctzen-2.png" alt="Juliana Mei Chungtaizen Project" style="width: 100%;">
+          <iframe width="560" height="400" src="https://www.youtube.com/embed/VHx4SzAc0H8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <!-- <img src="/img/ctzen-2.png" alt="Juliana Mei Chungtaizen Project" style="width: 100%;"> -->
         </div>
         <div class="code col-md-4 col-sm-12">
           <pre class="prettyprint">
