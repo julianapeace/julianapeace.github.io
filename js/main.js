@@ -3,7 +3,7 @@ $(document).ready(function() {
 });
 
 new TypeIt('#typeit', {
-   strings: ["Software Engineer", "Full Stack Developer", "Ukulele Player"],
+   strings: ["Software Developer", "Penetration Tester", "Ukulele Player"],
    speed: 100,
    breakLines: false,
    autoStart: true,
