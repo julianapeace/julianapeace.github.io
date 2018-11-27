@@ -20,4 +20,4 @@
   \/_/     \/_____/   \/_/ /_/     \/_/   \/_/     \/_____/   \/_____/   \/_/   \/_____/
 
 ```
-![Why You Should Hire Me](https://giphy.com/gifs/CKhJIoIGLwL2o/html5)
+![Why You Should Hire Me](https://media.giphy.com/media/CKhJIoIGLwL2o/giphy.gif
