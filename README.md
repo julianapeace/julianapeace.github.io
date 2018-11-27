@@ -20,4 +20,4 @@
   \/_/     \/_____/   \/_/ /_/     \/_/   \/_/     \/_____/   \/_____/   \/_/   \/_____/
 
 ```
-!['https://giphy.com/gifs/CKhJIoIGLwL2o/html5'](name-of-giphy.gif)
+![Why You Should Hire Me](https://giphy.com/gifs/CKhJIoIGLwL2o/html5)
