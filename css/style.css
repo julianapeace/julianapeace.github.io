@@ -125,6 +125,15 @@ HOME
   font-family: 'Roboto Slab';
   line-height: 0.2em;
 }
+
+.payloadBox{
+  /* border: 1px solid white; */
+  width: 40%;
+  display:flex;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
 /******************************************************
 LOADER
 ******************************************************/
