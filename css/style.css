@@ -292,23 +292,6 @@ color: rgba(0,0,0,0.67);
 /******************************************************
 BUTTONS
 ******************************************************/
-@keyframes slidebg {
-  to {
-    background-position:20vw;
-  }
-}
-.myButton {
-  background-color:#1976D2;
-  display:inline-block;
-  cursor:pointer;
-  color: #BBDEFB;
-  font-family:Arial;
-  font-size:15px;
-  padding:9px 24px;
-  text-decoration:none;
-  text-shadow:0px 1px 1px #4d4242;
-  box-shadow:0px 2px 4px rgba(0,0,0,0.38);
-}
 .infectedButton {
   background-color:#1976D2;
   display:inline-block;
@@ -321,16 +304,20 @@ BUTTONS
   text-shadow:0px 1px 1px #4d4242;
   box-shadow:0px 2px 4px rgba(0,0,0,0.38);
 }
-.infectedButton:hover {
+.infectedButton:hover, .infectedButton:focus {
   position:relative;
   background-color:#2196F3;
-  color:#BBDEFB;
+  /* color:#BBDEFB; */
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  background: #30302f;
+  transition: 0.25s ease-in-out;
   text-decoration:none;
   text-shadow:0px 1px 2px #4d4242;
   box-shadow:0px 4px 6px rgba(0,0,0,0.55);
   bottom: 1px;
-  animation:slidebg 3s linear infinite;
-  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  /* animation:slidebg 3s linear infinite;
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%); */
   /*background-image:     linear-gradient(
      to right,
      #E7484F,
@@ -347,6 +334,174 @@ BUTTONS
      #732982 100%,
      #E7484F 100%
    ); */
+}
+
+.infectedButton:before, .infectedButton:after {
+  content: attr(data-text);
+  padding: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  z-index: -1;
+  opacity: 0;
+}
+
+.infectedButton:hover:after, .infectedButton:focus:after {
+  -webkit-animation: jumpAfter 0.3s ease-in-out 0s infinite normal;
+          animation: jumpAfter 0.3s ease-in-out 0s infinite normal;
+  color: blue;
+  opacity: 1;
+}
+.infectedButton:hover:before, .infectedButton:focus:before {
+  -webkit-animation: jumpBefore 0.2s ease-in-out 0s infinite normal;
+          animation: jumpBefore 0.2s ease-in-out 0s infinite normal;
+  color: red;
+  opacity: 1;
+}
+
+@-webkit-keyframes jumpAfter {
+  0% {
+    -webkit-transform: translate3d(-2px, 0, 0);
+            transform: translate3d(-2px, 0, 0);
+  }
+  20% {
+    -webkit-transform: translate3d(-2px, 0, 0);
+            transform: translate3d(-2px, 0, 0);
+  }
+  40% {
+    -webkit-transform: translate3d(-2px, 0, 0);
+            transform: translate3d(-2px, 0, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(-3px, 0, 0);
+            transform: translate3d(-3px, 0, 0);
+  }
+  60% {
+    -webkit-transform: translate3d(-2px, 0, 0);
+            transform: translate3d(-2px, 0, 0);
+  }
+  80% {
+    -webkit-transform: translate3d(-2px, 0, 0);
+            transform: translate3d(-2px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-3px, 0, 0);
+            transform: translate3d(-3px, 0, 0);
+  }
+}
+
+@keyframes jumpAfter {
+  0% {
+    -webkit-transform: translate3d(-2px, 0, 0);
+            transform: translate3d(-2px, 0, 0);
+  }
+  20% {
+    -webkit-transform: translate3d(-2px, 0, 0);
+            transform: translate3d(-2px, 0, 0);
+  }
+  40% {
+    -webkit-transform: translate3d(-2px, 0, 0);
+            transform: translate3d(-2px, 0, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(-3px, 0, 0);
+            transform: translate3d(-3px, 0, 0);
+  }
+  60% {
+    -webkit-transform: translate3d(-2px, 0, 0);
+            transform: translate3d(-2px, 0, 0);
+  }
+  80% {
+    -webkit-transform: translate3d(-2px, 0, 0);
+            transform: translate3d(-2px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-3px, 0, 0);
+            transform: translate3d(-3px, 0, 0);
+  }
+}
+@-webkit-keyframes jumpBefore {
+  0% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  20% {
+    -webkit-transform: translate3d(-2px, -2px, 0);
+            transform: translate3d(-2px, -2px, 0);
+  }
+  40% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(-2px, 0, 0);
+            transform: translate3d(-2px, 0, 0);
+  }
+  60% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+}
+@keyframes jumpBefore {
+  0% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  20% {
+    -webkit-transform: translate3d(-2px, -2px, 0);
+            transform: translate3d(-2px, -2px, 0);
+  }
+  40% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(-2px, 0, 0);
+            transform: translate3d(-2px, 0, 0);
+  }
+  60% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+}
+
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+.myButton {
+  background-color:#1976D2;
+  display:inline-block;
+  cursor:pointer;
+  color: #BBDEFB;
+  font-family:Arial;
+  font-size:15px;
+  padding:9px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 1px #4d4242;
+  box-shadow:0px 2px 4px rgba(0,0,0,0.38);
 }
 .myButton:hover {
   position:relative;
