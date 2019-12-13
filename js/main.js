@@ -3,9 +3,9 @@ $(document).ready(function() {
 });
 
 new TypeIt('#typeit', {
-   strings: ["Software Developer", "Penetration Tester", "Ukulele Player"],
-   speed: 100,
+   strings: ["It's going to be alright :)"],
+   speed: 200,
    breakLines: false,
    autoStart: true,
-   loop: true
+   loop: false
 });
