@@ -7,27 +7,455 @@
   <link rel="shortcut icon" href="img/favicon.ico" />
   <title>Juliana Mei: Portfolio</title>
   <link href="https://fonts.googleapis.com/css?family=Arvo|Roboto+Slab|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-pink.min.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
 
-  <div id="wrapper">
-    <div class="start">
-      <h1 id='stopButton'>PAUSE</h1>
-      <h5 id="typeit" class="typeit"></h5>
-      <a class="" style="color:#666; position: fixed; right:1em; bottom: 1em" href="https://www.samhsa.gov/find-help/national-helpline" target="_blank">Find a friend <i class="fa fa-smile-o" aria-hidden="true"></i></a>
+  <body>
+    <div class="loader-container">
+      <div class="loader"></div>
     </div>
-  </div>
+
+    <div id="home">
+      <div class="navigation">
+        <div class="nav-name">
+          <span class="name">Juliana Mei</span>
+        </div>
+        <div class="nav-social">
+          <a class="email" target="_blank" href="https://twitter.com/sudobangbang"><i class="fa fa-twitter"></i></a>
+          <a class="github" target="_blank" href="https://github.com/julianapeace"><i class="fa fa-github"></i></a>
+          <a class="linkedin" target="_blank" href="http://linkedin.com/in/julianamei"><i class="fa fa-linkedin"></i></a>
+          <a class="twitter" target="_blank" href="https://stackoverflow.com/users/8922832/julianapeace"><i class="fa fa-stack-overflow"></i></a>
+          <a class="medium" target="_blank" href="http://medium.com/@julianapeace"><i class="fa fa-medium"></i></a>
+        </div>
+      </div>
+
+      <div class="row start">
+        <h1>JULIANA MEI</h1>
+        <h5 id="typeit" class="typeit"></h5>
+        <!-- <div class="payloadBox"> -->
+        <div class="">
+          <a class="myButton" target="_blank" href="/Juliana_Mei.pdf">Download Resume <i class="fa fa-file-text-o" aria-hidden="true"></i></a>
+          <a class="infectedButton" data-text="Download Infected Payload" target="_blank" href="/veilHelloTeaChina.bat">Download Infected Payload <i class="fa fa-smile-o" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div id="about">
+      <div class="about-container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12" style="text-align: center;">
+            <h2 class="mdl-typography--display-1 title">About Me</h2>
+            <img class="about-img" src="https://i.imgur.com/leJ90Gk.png" alt="" style="width:50%;">
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <div class="about-text ">
+              <p><strong> Hello, world! <i class="fa fa-smile-o" aria-hidden="true"></i></strong></p>
+              <p>I'm a project manager turned full-stack software developer and I have won three hackathons! </p>
+              <p>I recently won Best Game and Best Tech Stack at ETHNewYork 2019 where I put Robots on the Blockchain!</p> <a href="https://devpost.com/software/robotrumble">Robot Rumble: A Blockchain Game</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+
+    <div id="skills">
+      <div class="row">
+        <div class="col-md-5 col-sm-12">
+          <h2 class="mdl-typography--display-1 title">Front End</h2>
+          <div class="skill">
+            <i id="html" class="skill-skill devicon-html5-plain-wordmark colored"></i>
+            <div class="mdl-tooltip" data-mdl-for="html">HTML5</div>
+
+            <i id="css" class="skill-skill devicon-css3-plain-wordmark colored"></i>
+            <div class="mdl-tooltip" data-mdl-for="css">CSS3</div>
+
+            <i id="js" class="skill-skill devicon-javascript-plain colored"></i>
+            <div class="mdl-tooltip" data-mdl-for="js">Javascript</div>
+            <i id="jquery" class="skill-skill devicon-jquery-plain-wordmark colored"></i>
+            <div class="mdl-tooltip" data-mdl-for="jquery">jQuery</div>
+            <i id="bootstrap" class="skill-skill devicon-bootstrap-plain-wordmark colored"></i>
+            <div class="mdl-tooltip" data-mdl-for="bootstrap">Bootstrap</div>
+
+            <i id="react" class="skill-skill devicon-react-original-wordmark colored"></i>
+            <div class="mdl-tooltip" data-mdl-for="react">
+              React</div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-12"></div>
+        <div class="col-md-5 col-sm-12">
+          <h2 class="mdl-typography--display-1 title">Back End</h2>
+          <div class="skill">
+            <i id="python" class="skill-skill devicon-python-plain-wordmark colored"></i>
+            <div class="mdl-tooltip" data-mdl-for="python">Python</div>
+            <i id="nodejs" class="skill-skill devicon-nodejs-plain-wordmark colored"></i>
+            <div class="mdl-tooltip" data-mdl-for="nodejs">
+              NodeJS</div>
+            <i id="postgres" class="skill-skill devicon-postgresql-plain-wordmark colored"></i>
+            <div class="mdl-tooltip" data-mdl-for="postgres">PostGreSQL</div>
+
+            <i id="mongodb" class="skill-skill devicon-mongodb-plain-wordmark colored"></i>
+            <div class="mdl-tooltip" data-mdl-for="mongodb">
+              MongoDB</div>
+            <i id="django" class="skill-skill devicon-django-plain colored"></i>
+            <div class="mdl-tooltip" data-mdl-for="django">Django</div>
+
+            <i id="express" class="skill-skill devicon-express-original-wordmark colored"></i>
+            <div class="mdl-tooltip" data-mdl-for="express">Express</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-12">
+
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h2 class="mdl-typography--display-1 title">Tools</h2>
+
+          <div class="skill">
+            <i id="aws" class="skill-skill devicon-amazonwebservices-plain-wordmark colored"></i>
+            <div class="mdl-tooltip" data-mdl-for="aws">Amazon Web Services</div>
+            <i id="atom" class="skill-skill devicon-atom-plain-wordmark colored"></i>
+            <div class="mdl-tooltip" data-mdl-for="atom">Atom</div>
+            <i id="github" class="skill-skill devicon-github-plain-wordmark colored"></i>
+            <div class="mdl-tooltip" data-mdl-for="github">Github</div>
+            <i id="heroku" class="skill-skill devicon-heroku-plain-wordmark colored"></i>
+            <div class="mdl-tooltip" data-mdl-for="heroku">Heroku</div>
+            <i id="slack" class="skill-skill devicon-slack-plain-wordmark colored"></i>
+            <div class="mdl-tooltip" data-mdl-for="slack">Slack</div>
+            <i id="linux" class="skill-skill devicon-linux-plain colored"></i>
+            <div class="mdl-tooltip" data-mdl-for="linux">Linux</div>
+          </div>
+
+        </div>
+        <div class="col-md-3 col-sm-12">
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="projects">
+      <h2 class="mdl-typography--display-1 title">Featured Projects</h2>
+
+      <div class="row project-item">
+
+        <div class="project-description" style="font-family: 'Roboto Slab';">
+          <div class="col-md-8 col-sm-12">
+            <div class="mdl-typography--headline" style="font-family: 'Roboto Slab';"><strong>4C</strong> | Predictive Analytics for Overbooking Optimization</div>
+            <p>4C is a cloud-based application that leverages predictive analytics to get actionable insights for optimizing overbookings by hotel sales managers. It relies on historical occupancy data, current & future reservations, variable room
+              costs and walk costs to forecast the optimal rate of overbooking.</p>
+            <p>Built with Django, Splunk, HTML/CSS, and Ajax</p>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <a class="liveButton button" target="_blank" href="http://4c.julianamei.com">Live Website <i class="fa fa-heart-o" aria-hidden="true"></i></a>
+            <a class="githubButton button" target="_blank" href="https://github.com/julianapeace/4C-Predictive-Analytics-for-Overbooking-Optimization">Github <i class="fa fa-code" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-8 col-sm-12 project">
+          <iframe width="560" height="400" src="https://www.youtube.com/embed/XAs1HuBv4y4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="code col-md-4 col-sm-12">
+          <pre class="prettyprint">
+                <code class="language-javascript">
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+function httpGet(theUrl) {
+  var xmlHttp = new XMLHttpRequest();
+  xmlHttp.open("GET", theUrl, false); // false for synchronous request
+  xmlHttp.send(null);
+  return xmlHttp.responseText;
+}
+                </code>
+              </pre>
+        </div>
+
+      </div>
+
+
+      <div class="row project-item">
+
+        <div class="project-description" style="font-family: 'Roboto Slab';">
+          <div class="col-md-8 col-sm-12">
+            <div class="mdl-typography--headline" style="font-family: 'Roboto Slab';"><strong>Treffen</strong> | The Most Socialist Meet-Up App</div>
+            <p>A meet-up app that triangulates multiple zip codes to return several local businesses that are closest to the centerpoint.</p>
+            <p>Built with NodeJS, Express, and Yelp</p>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <a class="liveButton button" target="_blank" href="http://treffen.herokuapp.com">Live Website <i class="fa fa-heart-o" aria-hidden="true"></i></a>
+            <a class="githubButton button" target="_blank" href="https://github.com/julianapeace/Treffen-The-Most-Socialist-Meet-Up-App">Github <i class="fa fa-code" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-8 col-sm-12 project">
+          <iframe width="560" height="400" src="https://www.youtube.com/embed/gWQxoEbm530" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <!-- <img src="/img/treffen.png" alt="Juliana Mei Treffen Project"> -->
+        </div>
+        <div class="code col-md-4 col-sm-12">
+          <pre class="prettyprint">
+                <code class="language-javascript">
+  app.post('/zip', function(req, res, next){
+    if (!req.body) return res.sendStatus(400)
+    var inputs = req.body.zip
+    var zipCodes = tools.cleanZip(inputs)
+    let promises = tools.promisify(zipCodes);
+
+    Promise.all(promises)
+    .then(response =>{
+      let coords = tools.get_coords(response)
+      return coords
+    })
+    .then(coord =>{
+      let center = tools.get_center(coord)
+      return center
+    })
+    .then(center =>{
+      let term = req.body.term
+      tools.getYelp(center, term, 3)
+    })
+    .catch(next)
+
+    var matrix = tools.get_matrix()
+    console.log(matrix)
+
+    res.render('index.hbs', {'matrix':matrix})
+  });
+
+  app.listen(port, function(){
+    console.log('listening on port ' + port)
+  });
+                </code>
+              </pre>
+        </div>
+
+      </div>
+
+
+      <div class="row project-item">
+        <div class="project-description" style="font-family: 'Roboto Slab';">
+          <div class="col-md-8 col-sm-12">
+            <div class="mdl-typography--headline" style="font-family: 'Roboto Slab';"><strong>Get My Pup</strong> | The De-Fragmented Animal Shelter Database</div>
+            <p>Built for shelters to centralizes lost animal information. Features leveled user privileges and easy-to-use data manipulation.</p>
+            <p>Built with Python, MongoDB, and Tornado Web Framework</p>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <a class="liveButton button" target="_blank" href="http://www.get-my-pup.herokuapp.com">Live Website <i class="fa fa-heart-o" aria-hidden="true"></i></a>
+            <a class="githubButton button" target="_blank" href="https://github.com/Dog-Shelter-App/dog-shelter-app">Github <i class="fa fa-code" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="col-md-8 col-sm-12 project">
+          <iframe width="560" height="400" src="https://www.youtube.com/embed/AU1xUwq8Ru8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <!-- <img src="/img/getmypup.png" alt="Juliana Mei Get My Pup App Project" style="width: 100%;"> -->
+        </div>
+        <div class="code col-md-4 col-sm-12">
+          <pre class="prettyprint">
+                <code class="language-python">
+  # Dog Functions
+  def find_dog_by_id(_id):
+      return dogs.find_one({"_id": _id})
+
+  def find_dog_by_name(name):
+      return dogs.find_one({"name": name})
+
+  def find_all_dogs():
+      return dogs.find({})
+
+  def find_deleted_dogs():
+      return dogs.find({'delete': {'$ne': False} })
+
+  def find_all_public_dogs():
+      return dogs.find({"delete":False})
+
+  def find_many_dogs(data):
+      return dogs.find({"$and": data})
+
+      # older version
+      # return dogs.find({ "$or": data})
+
+  def add_new_dog(data):
+      return dogs.insert_one(data)
+
+  def update_dog_by_id(_id, data):
+      return dogs.update_one({"_id":_id}, {'$set': data })
+
+  def delete_dog_by_id(_id):
+      return dogs.remove({"_id": _id})
+
+  def delete_many_dogs_by_date_range(start, stop):
+      requests = [UpdateMany({'date_found':{'$gte': start, '$lt': stop}}, {'$set':{'delete':datetime.today()}})]
+
+      dogs.bulk_write(requests)
+
+      dogs_list = dogs.find({'date_found':{'$gte': start, '$lt': stop}})
+
+      return dogs_list
+
+  def find_shelter_by_id(_id):
+      return shelters.find_one({"_id": _id})
+
+  def find_shelter_by_name(name):
+      return shelters.find_one({"name": name})
+
+  def find_all_shelters():
+      return shelters.find({})
+
+  def add_new_shelter(data):
+      return shelters.insert_one(data)
+
+  def update_shelter_by_id(_id, data):
+      return shelters.update_one({"_id":_id}, {'$set': data })
+
+  def delete_shelter_by_id(_id):
+      return shelters.remove({"_id": _id})
+
+                </code>
+              </pre>
+        </div>
+      </div>
+
+      <div class="row project-item">
+
+        <div class="project-description" style="font-family: 'Roboto Slab';">
+          <div class="col-md-8 col-sm-12">
+            <div class="mdl-typography--headline" style="font-family: 'Roboto Slab';"><strong>Chung Tai Zen</strong> | Operational Buddhist Temple App</div>
+            <p>A top-down operational web application streamlining meditation class registrations, ceremonial duties, and volunteers.</p>
+            <p>Built with Python, Django, GraphQL, PostgreSQL, Unit Tests, and Mailgun.</p>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <a class="liveButton button" target="_blank" href="https://chungtaizen.com">Live Website <i class="fa fa-heart-o" aria-hidden="true"></i></a>
+            <a class="githubButton button" target="_blank" href="https://github.com/julianapeace/Chung-Tai-Zen-Operational-Buddhist-Temple-App">Github <i class="fa fa-code" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-8 col-sm-12 project">
+          <iframe width="560" height="400" src="https://www.youtube.com/embed/VHx4SzAc0H8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <!-- <img src="/img/ctzen-2.png" alt="Juliana Mei Chungtaizen Project" style="width: 100%;"> -->
+        </div>
+        <div class="code col-md-4 col-sm-12">
+          <pre class="prettyprint">
+                <code class="language-python">
+  from graphene import relay, ObjectType, Schema
+  from graphene_django import DjangoObjectType
+  from graphene_django.filter import DjangoFilterConnectionField
+
+  class VolunteerNode(DjangoObjectType):
+      class Meta:
+          model = Volunteer
+          only_fields = ('sector_name', 'user')
+          filter_fields = {
+          'sector_name': ['exact', 'icontains', 'istartswith'],
+          }
+          interfaces = (relay.Node, )
+
+  class Query(ObjectType):
+      all_volunteers = DjangoFilterConnectionField(VolunteerNode)
+
+  class PrivateGraphQLView(LoginRequiredMixin, GraphQLView):
+      pass
+  write_schema = Schema(query=Query, mutation=Mutation)
+  read_schema = Schema(query=Query)
+                </code>
+              </pre>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div id="github-img">
+      <h2 class="mdl-typography--display-1 title">Github</h2>
+      <img style="width: 70%" src="https://ghchart.rshah.org/1976D2/julianapeace" alt="Juliana Mei Github Commits Chart" />
+    </div>
+
+    <div id="footer">
+
+      <div class="row">
+        <h2 class="mdl-typography--display-1 title">Contact Me</h2>
+        <div class="col-md-12">
+          <div class="typeform-widget" data-url="https://julie403.typeform.com/to/RUsGah" data-transparency="50" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 500px;"> </div>
+          <script>
+            (function() {
+              var qs, js, q, s, d = document,
+                gi = d.getElementById,
+                ce = d.createElement,
+                gt = d.getElementsByTagName,
+                id = "typef_orm",
+                b = "https://embed.typeform.com/";
+              if (!gi.call(d, id)) {
+                js = ce.call(d, "script");
+                js.id = id;
+                js.src = b + "embed.js";
+                q = gt.call(d, "script")[0];
+                q.parentNode.insertBefore(js, q)
+              }
+            })()
+          </script>
+
+          <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"><a href="https://www.typeform.com/" style="color: #999" target="_blank">Typeform</a> </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="footer-copyright">
+            <p>Copyright © Juliana Mei</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="footer-icons">
+            <a target="_blank" href="https://twitter.com/sudobangbang"><i class="fa fa-twitter"></i></a>
+            <a target="_blank" href="https://github.com/julianapeace"><i class="fa fa-github"></i></a>
+            <a target="_blank" href="http://linkedin.com/in/julianamei"><i class="fa fa-linkedin"></i></a>
+            <a target="_blank" href="https://stackoverflow.com/users/8922832/julianapeace"><i class="fa fa-stack-overflow"></i></a>
+            <a target="_blank" href="http://medium.com/@julianapeace"><i class="fa fa-medium"></i></a>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </body>
 
 
   <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sunburst"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.2.0/typeit.min.js"></script>
   <script src="/js/main.js"></script>
 
 </body>
+
 </html>
