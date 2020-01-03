@@ -3,7 +3,7 @@ $(document).ready(function() {
 });
 
 new TypeIt('#typeit', {
-   strings: ["It's going to be alright :)"],
+   strings: ["Software Developer", "Penetration Tester", "Ukulele Player"],
    speed: 200,
    breakLines: false,
    autoStart: true,
