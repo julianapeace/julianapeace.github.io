@@ -4,8 +4,8 @@ $(document).ready(function() {
 
 new TypeIt('#typeit', {
    strings: ["Software Developer", "Penetration Tester", "Ukulele Player"],
-   speed: 200,
+   speed: 75,
    breakLines: false,
    autoStart: true,
-   loop: false
+   loop: true
 });
