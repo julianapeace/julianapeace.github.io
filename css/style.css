@@ -202,11 +202,6 @@ background-size: 1800% 1800%;
     50%{background-position:100% 19%}
     100%{background-position:0% 82%}
 }
-@media only screen and (max-width: 600px) {
-  #wrapper{
-    background-size: 400% 250%;
-  }
-}
 /******************************************************
 LOADER
 ******************************************************/
@@ -253,7 +248,7 @@ About
 }
 .about-container{
   width: 90%;
-  padding: 6em;
+  padding: 2em;
 }
 .about-text{
   padding-top:3em;
@@ -326,9 +321,14 @@ pre.prettyprint{
   border-radius:0 !important;
 }
 
+.responsive{
+  width: 70%;
+  height: auto;
+}
 #github-img{
   text-align:center;
-  padding: 4em 2em 4em 4em;
+  padding: 1em;
+  /* padding: 4em 2em 4em 4em; */
   border-bottom: 1px solid #BDBDBD;
 }
 /******************************************************
@@ -666,4 +666,30 @@ BUTTONS
 }
 .liveButton:hover {
   background-color:#ff4081;
+}
+
+@media screen and (max-width: 800px) {
+  #wrapper{
+    background-size: 400% 250%;
+  }
+  .start>h1{
+    font-size: 3em;
+  }
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+  .project-item{
+    padding: 1em 1em 1em 2em;
+    width: 92%;
+  }
+  #footer{
+    padding: 1em;
+  }
+  #skills{
+    padding: 1em;
+  }
+  .skill-skill{
+    font-size: 3em;
+  }
 }
