@@ -3,7 +3,7 @@ $(document).ready(function() {
 });
 
 new TypeIt('#typeit', {
-   strings: ["Software Developer", "Penetration Tester", "Ukulele Player"],
+   strings: ["Software Developer", "Ukulele Player"],
    speed: 75,
    breakLines: false,
    autoStart: true,
