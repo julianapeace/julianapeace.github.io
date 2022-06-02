@@ -15,5 +15,3 @@
 
 
 ```
-![Why You Should Hire Me](https://media.giphy.com/media/CKhJIoIGLwL2o/giphy.gif)
-![Because I have to get a job](https://media.giphy.com/media/UcJzJTW5HjuRW/giphy.gif)
